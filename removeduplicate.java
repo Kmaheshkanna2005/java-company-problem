@@ -41,3 +41,20 @@
 //         }
 //     }
 // }
+
+
+public class removeduplicate {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 2, 4, 3, 4};
+        boolean[] visited = new boolean[10]; 
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (!visited[arr[i]]) {   
+                System.out.print(arr[i] + " "); 
+                visited[arr[i]] = true; 
+            }
+        }
+    }
+}
